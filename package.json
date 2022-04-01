@@ -15,12 +15,17 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@pvduc/tailwind-presets": "^0.0.1",
+    "autoprefixer": "^10.4.2",
+    "dotenv": "^16.0.0",
     "gatsby": "^4.7.2",
     "gatsby-plugin-google-analytics": "^4.7.0",
+    "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-manifest": "^4.7.0",
     "gatsby-plugin-postcss": "^5.7.0",
     "gatsby-plugin-react-helmet": "^5.7.0",
+    "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sharp": "^4.7.0",
     "gatsby-plugin-sitemap": "^5.7.0",
     "gatsby-source-filesystem": "^4.7.0",
@@ -28,6 +33,7 @@
     "postcss": "^8.4.6",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^3.0.23"
   }
 }

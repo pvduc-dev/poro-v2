@@ -1,0 +1,19 @@
+[build]
+publish = "public/"
+
+[[redirects]]
+from = "/"
+to = "/de"
+status = 301
+conditions = {Language = ["de"]}
+
+[[redirects]]
+from = "/"
+to = "/vi"
+status = 301
+conditions = {Language = ["vi"]}
+
+[[redirects]]
+from = "/"
+to = "/en"
+status = 301
