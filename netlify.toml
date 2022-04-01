@@ -6,4 +6,4 @@ from = ""
 to = "/vi"
 force = true
 status = 301
-conditions = {Country = ["vi"]}
+conditions = {Language=["vi"], Country = ["VI"]}
