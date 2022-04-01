@@ -2,5 +2,5 @@
 publish = "public/"
 
 [[redirects]]
-from = "/*"
-to = "/blog/:splat"
+from = "/"
+to = "/en"
