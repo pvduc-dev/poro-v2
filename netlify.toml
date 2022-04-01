@@ -2,5 +2,8 @@
 publish = "public/"
 
 [[redirects]]
-from = "/*"
-to = "/en"
+from = ""
+to = "/vi"
+force = true
+status = 301
+conditions = {Country = ["VI"]}
