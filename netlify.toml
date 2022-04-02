@@ -3,4 +3,4 @@ from = "/*"
 to = "/en/:splat"
 status = 301
 force = true
-conditions = { Country = ["DE"] }
+conditions = { Country = ["vi"] }
