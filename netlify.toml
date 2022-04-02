@@ -1,6 +1,12 @@
 [[redirects]]
 from = "/*"
+to = "/vi/:splat"
+status = 301
+force = true
+conditions = { Language = ["vi"] }
+
+[[redirects]]
+from = "/*"
 to = "/en/:splat"
 status = 301
 force = true
-conditions = { Country = ["vi"] }
