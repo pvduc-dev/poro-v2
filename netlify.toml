@@ -1,6 +1,6 @@
 [[redirects]]
 from = "/"
-to = "/vi/"
+to = "/vn/"
 status = 302
 force = true
 conditions = { Country = ["vn"] }
