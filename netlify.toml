@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/"
-to = "/vi"
+to = "/vi/"
 status = 302
 force = true
