@@ -3,7 +3,7 @@ from = "/"
 to = "/vi/"
 status = 302
 force = true
-conditions = { Country = ["vi"] }
+conditions = { Country = ["vi-VN"] }
 
 [[redirects]]
 from = "/"
