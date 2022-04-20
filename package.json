@@ -12,7 +12,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "develop:netlify": "netlify dev"
   },
   "dependencies": {
     "@pvduc/tailwind-presets": "^0.0.1",
