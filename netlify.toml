@@ -3,4 +3,4 @@ from = "/"
 to = "/vi/"
 status = 302
 force = true
-conditions = { Country = ["VI"] }
+conditions = { Country = ["US"] }
