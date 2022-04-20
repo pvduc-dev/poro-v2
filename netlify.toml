@@ -3,3 +3,4 @@ from = "/"
 to = "/vi/"
 status = 302
 force = true
+conditions = { Language = ["vi"] }
