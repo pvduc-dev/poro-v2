@@ -3,4 +3,10 @@ from = "/"
 to = "/vi/"
 status = 302
 force = true
-conditions = { Country = ["US"] }
+conditions = { Language = ["vi"] }
+
+[[redirects]]
+from = "/"
+to = "/en/"
+status = 302
+force = true
