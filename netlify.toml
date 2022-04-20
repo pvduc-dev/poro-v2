@@ -1,12 +1,5 @@
 [[redirects]]
 from = "/"
 to = "/vi"
-status = 301
-force = false
-conditions = { Language = ["vi"] }
-
-[[redirects]]
-from = "/"
-to = "/en"
-status = 301
-force = false
+status = 200
+force = true
