@@ -15,6 +15,12 @@ module.exports = {
       "trackingId": process.env.GA_TRACKING_ID
       }
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "526870138820721",
+      },
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     // "gatsby-plugin-sitemap",
@@ -42,13 +48,6 @@ module.exports = {
         }
       }
     },
-    {
-      resolve: 'gatsby-plugin-i18n',
-      options: {
-        langKeyForNull: 'any',
-        langKeyDefault: 'en',
-        useLangKeyLayout: true,
-      }
-    },
+    `gatsby-plugin-dark-mode`
   ]
 };
