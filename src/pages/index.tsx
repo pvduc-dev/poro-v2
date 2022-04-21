@@ -1,13 +1,30 @@
 import * as React from "react"
-import {FC} from 'react'
+import {FC, useEffect, useRef} from 'react'
 import Card from "../components/molecules/Card";
+import Lottie from "lottie-web"
 // @ts-ignore
 
 const IndexPage: FC = () => {
+  const ref = useRef(null);
+  useEffect(() => {
+    // @ts-ignore
+    import('../../static/designer.json').then((data) => {
+      Lottie.loadAnimation({
+        container: ref.current,
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        animationData: data,
+        name: 'designer'
+      })
+      Lottie.stop('designer')
+    });
+  }, [])
   return (
     <main>
       <div>
         <div className="container">
+          <div ref={ref}></div>
           <p
             className="text-center text-3xl font-bold text-[#5A6DFF]"
           >

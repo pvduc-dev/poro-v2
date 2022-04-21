@@ -11,7 +11,7 @@ const Card = () => {
       <div
         className="h-80 md:h-96 py-8"
       >
-        <Animation/>
+        <img src="/animation.svg" alt=""/>
       </div>
       <div>
         <p className="text-center text-xl font-bold mb-4">Backend Developer</p>
