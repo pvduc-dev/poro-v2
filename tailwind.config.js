@@ -18,7 +18,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addBase, theme }) {
+    plugin(function ({addBase, theme}) {
       addBase({
         body: {
           backgroundColor: '#201d3a',

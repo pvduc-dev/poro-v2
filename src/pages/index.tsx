@@ -1,52 +1,40 @@
 import * as React from "react"
 import {FC, useEffect, useRef} from 'react'
 import Card from "../components/molecules/Card";
-import Lottie from "lottie-web"
-// @ts-ignore
+import SkillCard from "../components/molecules/SkillCard";
+import {Helmet} from "react-helmet";
+import {useDarkMode} from "usehooks-ts";
+import "react-multi-carousel/lib/styles.css"
+import Carousel from "react-multi-carousel";
+import Seo from "../components/organisms/Seo";
 
 const IndexPage: FC = () => {
-  const ref = useRef(null);
-  useEffect(() => {
-    // @ts-ignore
-    import('../../static/designer.json').then((data) => {
-      Lottie.loadAnimation({
-        container: ref.current,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        animationData: data,
-        name: 'designer'
-      })
-      Lottie.stop('designer')
-    });
-  }, [])
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 3 // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 2 // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1 // optional, default to 1.
+    }
+  };
   return (
-    <main>
-      <div>
-        <div className="container">
-          <div ref={ref}></div>
-          <p
-            className="text-center text-3xl font-bold text-[#5A6DFF]"
-          >
-            Skills
-          </p>
-          <div
-            className="flex flex-wrap md:-mx-6 mt-6"
-          >
-            <div className="w-full lg:w-1/3 p-3 lg:p-4 xl:p-6 xl:p-8">
-              <Card/>
-            </div>
-            <div className="w-full lg:w-1/3 p-3 lg:p-4 xl:p-6 xl:p-8">
-              <Card/>
-            </div>
-            <div className="w-full lg:w-1/3 p-3 lg:p-4 xl:p-6 xl:p-8">
-              <Card/>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-  )
+    <>
+      <Seo
+        description="Pv Duc developer"
+      />
+      <main>
+      </main>
+    </>
+)
 }
 
 export default IndexPage
