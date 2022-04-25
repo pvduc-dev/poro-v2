@@ -22,6 +22,10 @@ const Seo: FC<SeoProps> = ({title, description, meta, siteUrl} ) => {
       title={title}
       meta={[
         {
+          property: `og:image`,
+          content: '/thumbnail.png',
+        },
+        {
           name: 'description',
           content: description,
         },
@@ -36,14 +40,6 @@ const Seo: FC<SeoProps> = ({title, description, meta, siteUrl} ) => {
         {
           property: 'og:description',
           content: 'Pv Duc Web Developer Portfolio'
-        },
-        {
-          property: `og:image`,
-          content: '/thumbnail.png',
-        },
-        {
-          property: `og:image`,
-          content: '/thumbnail.png',
         },
       ]}
     />
