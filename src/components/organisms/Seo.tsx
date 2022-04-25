@@ -26,13 +26,25 @@ const Seo: FC<SeoProps> = ({title, description, meta, siteUrl} ) => {
           content: description,
         },
         {
+          property: 'og:url',
+          content: siteUrl,
+        },
+        {
           property: 'og:title',
           content: 'Pv Duc Developer',
         },
         {
           property: 'og:description',
           content: 'Pv Duc Web Developer Portfolio'
-        }
+        },
+        {
+          property: `og:image`,
+          content: '/thumbnail.png',
+        },
+        {
+          property: `og:image`,
+          content: '/thumbnail.png',
+        },
       ]}
     />
   )
